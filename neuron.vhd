@@ -4,10 +4,10 @@ use IEEE.numeric_std.all;
 
 entity async_neuron is 
 	Port(
-		weight: in unsigned;
-		perceptron_input: in unsigned;
-		bias: in unsigned;
-		neuron_output: out unsigned
+		weight: in unsigned(0 to 1);
+		perceptron_input: in unsigned(0 to 1);
+		bias: in unsigned(0 to 1);
+		neuron_output: out unsigned(0 to 3)
 	);
 end async_neuron;
 
